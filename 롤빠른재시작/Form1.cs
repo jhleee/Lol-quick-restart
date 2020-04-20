@@ -1,22 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace 롤빠른재시작
 {
     public partial class Form1 : Form
     {
-        static String PROCESS_NAME = "notepad"; 
+        static String PROCESS_NAME = "LeagueClientUxRender";
         public Form1()
         {
             InitializeComponent();
+            MinimizeBox = false;
             refresh();
         }
 
@@ -75,34 +70,16 @@ namespace 롤빠른재시작
 
         }
 
-        private void 만든이ToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void 만든이에게ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("https://github.com/jhleee/Lol-quick-restart");
 
         }
 
-        private void 정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void 종료ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 
